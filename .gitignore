@@ -1,0 +1,21 @@
+# dependencies
+/productfinder-frontend/node_modules
+/productfinder-frontend/.pnp
+/productfinder-frontend/.pnp.js
+
+# testing
+/productfinder-frontend/coverage
+
+# production
+/productfinder-frontend/build
+
+# misc
+/productfinder-frontend/.DS_Store
+/productfinder-frontend/.env.local
+/productfinder-frontend/.env.development.local
+/productfinder-frontend/.env.test.local
+/productfinder-frontend/.env.production.local
+
+/productfinder-frontend/npm-debug.log*
+/productfinder-frontend/yarn-debug.log*
+/productfinder-frontend/yarn-error.log*
