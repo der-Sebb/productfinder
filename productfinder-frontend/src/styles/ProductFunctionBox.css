@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.productFunctionBox {
+  @apply flex flex-col bg-slate-100 rounded-lg m-2;
+}
+
+.input {
+  @apply m-2 shadow-md;
+}
+
+.btn {
+  @apply mt-4 mb-1 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 w-28;
+}
+
+.txt {
+  @apply ml-2 font-bold text-gray-800;
+}
+
+.resultSelection {
+  @apply block w-full px-4 pr-8 leading-tight bg-white border border-gray-300;
+}
+
+.centerDiv {
+  @apply flex justify-center;
+}
