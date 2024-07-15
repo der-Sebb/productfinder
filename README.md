@@ -9,5 +9,5 @@ Productfinder is a powerful and efficient tool designed to help you quickly sear
 - **Responsive Frontend**: A modern, responsive interface built with React and Tailwind to ensure a seamless user experience across devices.
 ## Example search
 <p align="center">
-    <img src="productfinder.png" alt="sample conversation" width="450">
+    <img src="productfinder.png" alt="sample conversation" width="600">
 </p>
