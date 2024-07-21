@@ -1,25 +1,22 @@
-import './styles/App.css';
+import './App.css';
 import AddProductComponent from './components/AddProductComponent';
 import SearchProductComponent from './components/SearchProductComponent';
-import ShowProductComponent from './components/ShowProductComponent';
+import ProductShowComponent from './components/ProductShowComponent';
 import { ProductProvider } from './components/ProductContext';
 
 function App() {
-  const defaultMessage: string = 'Productfinder'
 
   return (
-    <div className="flexCenter">
-      <header>
-        <h1 className="headerTitle">{defaultMessage}</h1>
-      </header>
-      <ProductProvider>
-        <div className="functionBoxContainer">
+    <ProductProvider>
+      <div className='flex flex-col items-center min-h-screen bg-emerald-200'>
+        <h1 className='text-4xl font-bold text-gray-800'>Productfinder</h1>
+        <div className='flex flex-row'>
           <AddProductComponent></AddProductComponent>
           <SearchProductComponent></SearchProductComponent>
         </div>
-        <ShowProductComponent></ShowProductComponent>
-      </ProductProvider>
-    </div>
+        <ProductShowComponent></ProductShowComponent>
+      </div>
+    </ProductProvider>
   );
 }
 

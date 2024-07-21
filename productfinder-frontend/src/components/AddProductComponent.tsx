@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import '../styles/ProductFunctionBox.css';
-import '../styles/App.css';
 import { Product } from '../interfaces/types';
 import { useProductContext } from './ProductContext';
+import '../App.css';
 
 function AddProductComponent() {
+    const { addProduct } = useProductContext();
     const [name, setName] = useState<string>('');
     const [description, setDescription] = useState<string>('');
-    const { addProduct } = useProductContext();
 
     const saveProduct = async () => {
         const newProduct: Product = { name: name, description: description };
@@ -22,7 +21,7 @@ function AddProductComponent() {
             <input id='nameInput' className='input' value={name} onChange={(e) => setName(e.target.value)}></input>
             <label htmlFor='descriptionInput' className='txt'>Description:</label>
             <input id='descriptionInput' className='input' value={description} onChange={(e) => setDescription(e.target.value)}></input>
-            <div className='centerDiv'>
+            <div className='flex justify-center'>
                 <button className='btn' onClick={saveProduct}>Save</button>
             </div>
         </div>)

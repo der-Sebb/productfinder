@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import '../styles/ProductFunctionBox.css';
-import '../styles/App.css';
 import { useProductContext } from './ProductContext';
+import '../App.css';
 
 function SearchProductComponent() {
     const { searchProducts } = useProductContext();
@@ -24,7 +23,7 @@ function SearchProductComponent() {
             <label htmlFor='searchSelect' className='txt'>How many results:</label>
             <div id='searchSelect' className='flex justify-center'>
                 <div className='m-2 w-11/12 inline-block'>
-                    <select className='resultSelection' value={selectedValue} onChange={handleSelect}>
+                    <select className='block w-full px-4 pr-8 leading-tight bg-white border border-gray-300' value={selectedValue} onChange={handleSelect}>
                         {options.map((option) => (
                             <option key={option} value={option}>
                                 {option}
@@ -33,7 +32,7 @@ function SearchProductComponent() {
                     </select>
                 </div>
             </div>
-            <div className='centerDiv'>
+            <div className='flex justify-center'>
                 <button className='btn' onClick={search}>Search</button>
             </div>
         </div>)

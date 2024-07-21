@@ -1,5 +1,4 @@
-import '../styles/ProductShowBox.css';
-import '../styles/App.css';
+import '../App.css';
 import { Product } from '../interfaces/types';
 import { useState } from 'react';
 
@@ -11,16 +10,16 @@ function ProductComponent(product: Product) {
     };
 
     return (
-        <div className="product">
+        <div className="border border-gray-300 rounded shadow m-4">
             <div
-                className="productAccordion"
+                className="bg-gray-200 p-4 cursor-pointer flex justify-between items-center"
                 onClick={toggleAccordion}
             >
-                <h2 className="productName">{product.name}</h2>
+                <h2 className="text-lg font-medium">{product.name}</h2>
                 <span>{isOpen ? '-' : '+'}</span>
             </div>
             {isOpen && (
-                <div className="productDescription">
+                <div className="p-4">
                     <p>{product.description}</p>
                 </div>
             )}

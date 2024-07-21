@@ -17,11 +17,3 @@
 .txt {
   @apply ml-2 font-bold text-gray-800;
 }
-
-.resultSelection {
-  @apply block w-full px-4 pr-8 leading-tight bg-white border border-gray-300;
-}
-
-.centerDiv {
-  @apply flex justify-center;
-}
